@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rtop</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css"></link>
+    <script src="rtop.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <span>Please enable JavaScript to use this website.</span>
+    </noscript>
+    <div class="home">
+      <svg class="close-button svg-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6L6 18M6 6l12 12"></path>
+      </svg>
+      <a href="https://github.com/nickrj/rtop">
+        <svg role="img" class="github-icon svg-button" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="white" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+      <div class="home-popup">
+        <h1 class="logo">rtop</h1>
+        <h2 class="description">Browse the top images & videos on any subreddit</h2>
+        <div class="input-container">
+          <input class="subreddit-input" type="text" placeholder="subreddit" autofocus="">
+          <button class="input-button">
+            <svg class="input-spinner" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"></path>
+            </svg>
+            <svg class="input-arrow" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50">   
+              <path d="M15,10 L35,25 L15,40" stroke="black" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </div>
+        <select class="past-menu" name="menu">
+          <option value="hour">past hour</option>
+          <option value="day" selected>past day</option>
+          <option value="week">past week</option>
+          <option value="month">past month</option>
+          <option value="year">past year</option>
+          <option value="all">all-time</option>
+        </select>
+        <p class="home-error"></p>
+      </div>
+      <div class="home-area"></div>
+    </div>
+    <svg class="home-button svg-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 12h18M3 6h18M3 18h18"></path> 
+    </svg>
+    <div class="nsfw-banner">
+      <h1>Warning: this post is NSFW</h1>
+      <button>I'm over 18</button>
+    </div>
+    <div class="prev-button hidden svg-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 10 15">
+        <path d="M7 1l-6 6 6 6" stroke="white" stroke-width="1" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+      </svg>
+    </div>
+    <div class="next-button hidden svg-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 11 15">
+        <path d="M3 1l6 6-6 6" stroke="white" stroke-width="1" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+      </svg>
+    </div>
+    <div class="counter-container">
+      <svg class="fetch-spinner hidden" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"></path>
+      </svg>
+      <p class="counter"></p>
+    </div>
+  </body>
+</html>
